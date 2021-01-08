@@ -1,0 +1,8 @@
+prefix=/home/nvidia/Code/Drone_ws/install
+
+Name: my_laser_filter
+Description: Description of my_laser_filter
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
