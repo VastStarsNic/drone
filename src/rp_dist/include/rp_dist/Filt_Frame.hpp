@@ -25,6 +25,7 @@ class rp_frame
 private:
     dt_angle angle;
     float thres_gap;
+    float closest;
     vector<float> distances;
     vector<dt_point> jmp_pts;
     vector<dt_point> options;
