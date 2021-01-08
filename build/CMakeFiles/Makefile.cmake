@@ -15,13 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "my_laser_filter/catkin_generated/ordered_paths.cmake"
   "my_laser_filter/catkin_generated/package.cmake"
-  "rplidar_distance_measure_server/catkin_generated/ordered_paths.cmake"
-  "rplidar_distance_measure_server/catkin_generated/package.cmake"
+  "rp_dist/catkin_generated/ordered_paths.cmake"
+  "rp_dist/catkin_generated/package.cmake"
   "/home/nvidia/Code/Drone_ws/src/CMakeLists.txt"
   "/home/nvidia/Code/Drone_ws/src/my_laser_filter/CMakeLists.txt"
   "/home/nvidia/Code/Drone_ws/src/my_laser_filter/package.xml"
-  "/home/nvidia/Code/Drone_ws/src/rplidar_distance_measure_server/CMakeLists.txt"
-  "/home/nvidia/Code/Drone_ws/src/rplidar_distance_measure_server/package.xml"
+  "/home/nvidia/Code/Drone_ws/src/rp_dist/CMakeLists.txt"
+  "/home/nvidia/Code/Drone_ws/src/rp_dist/package.xml"
   "/opt/ros/melodic/share/catkin/cmake/../package.xml"
   "/opt/ros/melodic/share/catkin/cmake/all.cmake"
   "/opt/ros/melodic/share/catkin/cmake/assert.cmake"
@@ -185,7 +185,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "my_laser_filter/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "rplidar_distance_measure_server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "rp_dist/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -224,5 +224,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "my_laser_filter/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "my_laser_filter/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "my_laser_filter/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
-  "rplidar_distance_measure_server/CMakeFiles/rplidar_distance_measure_server_node.dir/DependInfo.cmake"
+  "rp_dist/CMakeFiles/rp_dist_node.dir/DependInfo.cmake"
   )

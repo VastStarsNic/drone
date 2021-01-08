@@ -1,0 +1,8 @@
+prefix=/home/nvidia/Code/Drone_ws/install
+
+Name: rp_dist
+Description: Description of rp_dist
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

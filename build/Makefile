@@ -610,17 +610,17 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named rplidar_distance_measure_server_node
+# Target rules for targets named rp_dist_node
 
 # Build rule for target.
-rplidar_distance_measure_server_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rplidar_distance_measure_server_node
-.PHONY : rplidar_distance_measure_server_node
+rp_dist_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rp_dist_node
+.PHONY : rp_dist_node
 
 # fast build rule for target.
-rplidar_distance_measure_server_node/fast:
-	$(MAKE) -f rplidar_distance_measure_server/CMakeFiles/rplidar_distance_measure_server_node.dir/build.make rplidar_distance_measure_server/CMakeFiles/rplidar_distance_measure_server_node.dir/build
-.PHONY : rplidar_distance_measure_server_node/fast
+rp_dist_node/fast:
+	$(MAKE) -f rp_dist/CMakeFiles/rp_dist_node.dir/build.make rp_dist/CMakeFiles/rp_dist_node.dir/build
+.PHONY : rp_dist_node/fast
 
 # Help Target
 help:
@@ -669,7 +669,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... rplidar_distance_measure_server_node"
+	@echo "... rp_dist_node"
 .PHONY : help
 
 

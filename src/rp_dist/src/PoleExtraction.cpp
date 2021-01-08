@@ -37,7 +37,7 @@ float rplader_pole_distance(vector<float> vec_a)
    // cout<<"key vec:";
     // for(auto i:key_vec)
     // cout<<i<<' ';
-    // cout<<endl;
+    // cout<<endl ;
     int key_index=0;
     for(auto i=distance.begin();i!=distance.end();i++,key_index++)
     {   

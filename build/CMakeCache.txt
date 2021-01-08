@@ -379,6 +379,12 @@ rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 
 //Value Computed by CMake
+rp_dist_BINARY_DIR:STATIC=/home/nvidia/Code/Drone_ws/build/rp_dist
+
+//Value Computed by CMake
+rp_dist_SOURCE_DIR:STATIC=/home/nvidia/Code/Drone_ws/src/rp_dist
+
+//Value Computed by CMake
 rplidar_distance_measure_server_BINARY_DIR:STATIC=/home/nvidia/Code/Drone_ws/build/rplidar_distance_measure_server
 
 //Value Computed by CMake

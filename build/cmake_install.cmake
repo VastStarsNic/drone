@@ -132,7 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/nvidia/Code/Drone_ws/build/gtest/cmake_install.cmake")
   include("/home/nvidia/Code/Drone_ws/build/my_laser_filter/cmake_install.cmake")
-  include("/home/nvidia/Code/Drone_ws/build/rplidar_distance_measure_server/cmake_install.cmake")
+  include("/home/nvidia/Code/Drone_ws/build/rp_dist/cmake_install.cmake")
 
 endif()
 
