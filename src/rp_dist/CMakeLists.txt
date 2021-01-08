@@ -135,7 +135,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_node
- src/PoleExtraction.cpp
+ src/Filt_Frame.cpp
  src/RplidarDist.cpp
  src/RplidarDistServer.cpp)
 

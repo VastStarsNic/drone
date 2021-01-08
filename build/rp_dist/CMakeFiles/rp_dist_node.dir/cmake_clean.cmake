@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rp_dist_node.dir/src/PoleExtraction.cpp.o"
+  "CMakeFiles/rp_dist_node.dir/src/Filt_Frame.cpp.o"
   "CMakeFiles/rp_dist_node.dir/src/RplidarDist.cpp.o"
   "CMakeFiles/rp_dist_node.dir/src/RplidarDistServer.cpp.o"
   "/home/nvidia/Code/Drone_ws/devel/lib/rp_dist/rp_dist_node.pdb"

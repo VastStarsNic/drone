@@ -29,6 +29,7 @@ void RplidarDistNode::PublisherInit()
 void RplidarDistNode::Rplidar_Callback(const sensor_msgs::LaserScan::ConstPtr& scan)
 {
     vector<float> vec(begin(scan->ranges),end(scan->ranges));
-    float dist=rplader_pole_distance(vec);
+    rp_frame rpftr = rp_frame(vec, scan->angle_min, scan->angle_increment);
+    float dist=rpftr.get_pole();
     std::cout<<dist<<std::endl;
 }
