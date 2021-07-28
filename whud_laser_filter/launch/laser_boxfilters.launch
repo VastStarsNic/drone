@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
+        <rosparam file="$(find whud_laser_filter)/config/laser_boxfilters_config.yaml" command="load" />
+    </node>
+
+    <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_angle_filter">
+        <rosparam file="$(find whud_laser_filter)/config/laser_angularfilters_config.yaml" command="load"/>
+        <remap from="scan_filtered" to="scan_angle_filtered"/>
+    </node>
+
+</launch>
