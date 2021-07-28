@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="whud_gpio" type="WhudGPIOControl.py" name="gpio_node" output= "screen">
+        
+    </node>
+</launch>
