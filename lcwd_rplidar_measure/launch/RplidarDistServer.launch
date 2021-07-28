@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="lcwd_rplidar_measure" name="RplidarDistServer" type="lcwd_rplidar_measure_node" output="screen">
+        <param name="subscribe_rplidar_topic" value="/scan_filtered"/>
+        <rosparam command="load" file="$(find lcwd_rplidar_measure)/config/params_config.yaml" />
+    </node>
+</launch>

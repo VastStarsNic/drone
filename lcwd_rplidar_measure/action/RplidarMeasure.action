@@ -1,0 +1,8 @@
+#goal
+bool start
+---
+#result
+bool done
+---
+#feedback
+geometry_msgs/Twist twist
