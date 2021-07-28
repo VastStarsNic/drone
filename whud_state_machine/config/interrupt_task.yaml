@@ -1,0 +1,50 @@
+# 
+# interrupt task description
+# 
+# task_A:
+#   plugin_name: 
+#   delay_timeout: 10
+#   param:
+#   - param_A
+#   - param_B
+#   return_name: 
+
+jump_task1:
+  plugin_name: "lcwd_jump"
+  delay_timeout: 10
+  param:
+  - "2"
+  - "1"
+  return_name: "take_off1"
+
+jump_task2:
+  plugin_name: "lcwd_jump"
+  delay_timeout: 10
+  param:
+  - "3"
+  - "1"
+  return_name: "take_off2"
+
+jump_task3:
+  plugin_name: "lcwd_jump"
+  delay_timeout: 10
+  param:
+  - "4"
+  - "1"
+  return_name: "take_off3"
+
+jump_task4:
+  plugin_name: "lcwd_jump"
+  delay_timeout: 10
+  param:
+  - "1"
+  - "1"
+  return_name: "take_off4"
+
+jump_switch:
+  plugin_name: "lcwd_jump"
+  delay_timeout: 10
+  param:
+  - "99"
+  - "0"
+  return_name: "switch"

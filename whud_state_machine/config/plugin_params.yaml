@@ -1,0 +1,6 @@
+whud_nav_client:
+  map_frame_id: "map"
+  body_frame_id: "nav_link"
+
+wait_for_start: "false"
+switch_end: "false"

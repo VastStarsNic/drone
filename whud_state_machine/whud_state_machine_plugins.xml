@@ -1,0 +1,63 @@
+<library path="lib/libwhud_state_machine">
+
+  <class name="whud_nav_client" type="whud_state_machine::WhudNavClient" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Load parameters and communicate with move base server.
+    </description>
+  </class>
+
+  <class name="whud_basic_control" type="whud_state_machine::WhudBasicControl" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Control basic move(takeoff, land, yaw and height-control)
+    </description>
+  </class>
+
+  <class name="whud_switch" type="whud_state_machine::WhudSwitch" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Switch on or switch off state machine.
+    </description>
+  </class>
+
+  <class name="whud_image_client" type="whud_state_machine::WhudImageClient" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Control move with whud_vision.
+    </description>
+  </class>
+
+  <class name="lcwd_choose" type="whud_state_machine::LcwdChoose" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Choose the branch of state machine.
+    </description>
+  </class>
+
+  <class name="lcwd_jump" type="whud_state_machine::LcwdJump" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Choose the branch of state machine.
+    </description>
+  </class>
+
+  <class name="lcwd_wait" type="whud_state_machine::LcwdWait" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Wait.
+    </description>
+  </class>
+
+  <class name="lcwd_empty" type="whud_state_machine::LcwdEmpty" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Just used to gei into interrupt task.
+    </description>
+  </class>
+
+  <class name="whud_rplidar_client" type="whud_state_machine::WhudRplidarClient" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    use rplidar to find poles.
+    </description>
+  </class>
+
+  <class name="whud_disarm" type="whud_state_machine::WhudDisarm" base_class_type="whud_state_machine::PluginBase">
+    <description>
+    Lock the ACFly.
+    </description>
+  </class>
+
+</library>

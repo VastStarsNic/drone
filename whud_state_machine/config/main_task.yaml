@@ -1,0 +1,220 @@
+#
+# main task list
+#
+# if you want to add main task, delete "[]" and add task like this:
+# main_task_list:
+# - task_A
+# - task_B
+#   ...
+main_task_list:
+  # - vision2
+  - switch
+  - wait_for_takeoff
+  - take_off
+  - height_control
+  - land
+  - disarm
+
+#
+# main task description
+#
+# task_A:
+#   plugin_name:
+#   delay_timeout: 10
+#   param:
+#   - param_A
+#   - param_B
+#   task_name: "task_A"
+#   attach_name:
+
+
+#=========================================================
+switch:
+  plugin_name: "whud_switch"
+  delay_timeout: 100000
+  param:
+  - "wait_for_start"
+  task_name: "switch"
+  attach_name: "none"
+
+wait_for_takeoff:
+  plugin_name: "lcwd_wait"
+  delay_timeout: 100
+  param: 
+  - "5"
+  task_name: "wait_for_takeoff"
+  attach_name: "none"
+
+take_off:
+  plugin_name: "whud_basic_control"
+  delay_timeout: 100
+  param:
+  - "takeoff"
+  - "0.5"
+  - "0.7"
+  task_name: "take_off"
+  attach_name: "none"
+
+
+height_control:
+  plugin_name: "whud_basic_control"
+  delay_timeout: 20
+  param:
+  - "height_control"
+  - "0.3"
+  - "1"
+  task_name: "height_control"
+  attach_name: "none"
+
+
+land:
+  plugin_name: "whud_basic_control"
+  delay_timeout: 100
+  param:
+  - "land"
+  - "0.3"
+  task_name: "land"
+  attach_name: "none"
+
+wait_for_disarm:
+  plugin_name: "lcwd_wait"
+  delay_timeout: 100
+  param: 
+  - "5"
+  task_name: "wait_for_disarm"
+  attach_name: "none"
+
+
+disarm:
+  plugin_name: "whud_disarm"
+  delay_timeout: 100
+  param:  []
+  task_name: "disarm"
+  attach_name: "none"
+
+
+
+
+#========================================================================
+
+nav1:
+  plugin_name: "whud_nav_client"
+  delay_timeout: 10
+  param:
+  - "1"
+  - "1"
+  - "1"
+  task_name: "nav1"
+  attach_name: "none"
+
+nav2:
+  plugin_name: "whud_nav_client"
+  delay_timeout: 10
+  param:
+  - "0.3"
+  - "-1.5"
+  - "1"
+  task_name: "nav2"
+  attach_name: "none"
+
+vision1:
+  plugin_name: "whud_image_client"
+  delay_timeout: 10
+  param: 
+  - "3"
+  - "1"
+  task_name: "vision1"
+  attach_name: "none"
+
+nav3:
+  plugin_name: "whud_nav_client"
+  delay_timeout: 10
+  param:
+  - "0.3"
+  - "-3.0"
+  - "1"
+  task_name: "nav3"
+  attach_name: "none"
+
+rplidar:
+  plugin_name: "whud_rplidar_client"
+  delay_timeout: 300
+  param: 
+  - "2"
+  task_name: "rplidar"
+  attach_name: "none"
+
+nav4:
+  plugin_name: "whud_nav_client"
+  delay_timeout: 10
+  param:
+  - "1.8"
+  - "-3"
+  - "1"
+  task_name: "nav4"
+  attach_name: "none"
+
+vision2:
+  plugin_name: "whud_image_client"
+  delay_timeout: 10
+  param: 
+  - "3"
+  - "1"
+  task_name: "vision2"
+  attach_name: "none"
+
+nav5:
+  plugin_name: "whud_nav_client"
+  delay_timeout: 15
+  param:
+  - "1.8"
+  - "0"
+  - "1"
+  task_name: "nav5"
+  attach_name: "none"
+
+#========================================================================
+
+
+
+
+
+  
+
+
+
+
+
+
+choose1:
+  plugin_name: "lcwd_choose"
+  delay_timeout: 10
+  param:
+  - "1"
+  task_name: "choose1"
+  attach_name: "jump_task1"
+
+choose2:
+  plugin_name: "lcwd_choose"
+  delay_timeout: 10
+  param:
+  - "2"
+  task_name: "choose2"
+  attach_name: "jump_task2"
+
+choose3:
+  plugin_name: "lcwd_choose"
+  delay_timeout: 10
+  param:
+  - "3"
+  task_name: "choose3"
+  attach_name: "jump_task3"
+
+choose4:
+  plugin_name: "lcwd_choose"
+  delay_timeout: 10
+  param:
+  - "4"
+  task_name: "choose4"
+  attach_name: "jump_task4"
+
