@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find usb_cam)/launch/usb_cam_nodelet.launch" />
+    <arg name="pluginlists_yaml" default="$(find whud_vision)/config/image_pluginlists.yaml" />
+    <arg name="config_yaml" default="$(find whud_vision)/config/image_config.yaml" />
+    <arg name="plugin_config_yaml" default="$(find whud_vision)/config/image_plugins_config.yaml"/>
+
+    <node pkg="nodelet" type="nodelet" name="whud_vision_nodelet" args="load whud_vision/ImageFrameNodelet standalone_nodelet" output="screen">
+        <rosparam command="load" file="$(arg pluginlists_yaml)" />
+        <rosparam command="load" file="$(arg config_yaml)" />   
+        <rosparam command="load" file="$(arg plugin_config_yaml)" /> 
+    </node>
+</launch>

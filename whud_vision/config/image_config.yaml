@@ -1,0 +1,27 @@
+video1:
+  topic_name: "/usb_cam_nodelet/image_raw"
+  videofre: 10
+  plugins: 
+  -  "ColorRecognize"
+  -  "Example"
+  -  "QRCodeRecognize"
+  plugins_frequency: 
+  -  30
+  -  5
+  -  10
+
+video2:
+  topic_name: "/none"
+  videofre: 30
+  plugins: 
+  -  "Shaperecognize"
+  plugins_frequency: 
+  -  5
+
+video3:
+  topic_name: "/none"
+  videofre: 30
+  plugins: 
+  -  "ColorRecognize"
+  plugins_frequency: 
+  -  10 

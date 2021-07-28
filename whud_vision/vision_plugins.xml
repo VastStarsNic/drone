@@ -1,0 +1,15 @@
+<library path="lib/libwhud_vision_nodelet">
+
+    <class name="Example" type="vision_plugins::Example" base_class_type="vision_base::VisionBase">
+        <description>This is a shape-recognize plugin</description>
+    </class>
+
+    <class name="ColorRecognize" type="vision_plugins::ColorRecognize" base_class_type="vision_base::VisionBase">
+        <description>This is a color-recognize plugin</description>
+    </class>
+
+    <class name="QRCodeRecognize" type="vision_plugins::QRCodeRecognize" base_class_type="vision_base::VisionBase">
+        <description>This is a QRCode-recognize plugin</description>
+    </class>
+
+</library>

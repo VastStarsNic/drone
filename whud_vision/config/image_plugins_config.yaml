@@ -1,0 +1,25 @@
+ColorRecognize:
+  max_speed: 0.2
+  recognize_freq: 30
+  upper_area: 20000
+  lower_area: 1000
+  flag_hist: false
+  Px: 3.0
+  Ix: 0.05
+  Dx: 0.3
+  Py: 3.0
+  Iy: 0.05
+  Dy: 0.2
+
+QRCodeRecognize:
+  max_speed: 0.25
+  recognize_freq: 100
+  PID:
+    x:
+      p: 3.0
+      i: 0.05
+      d: 0.3
+    y:
+      p: 3.0
+      i: 0.05
+      d: 0.3

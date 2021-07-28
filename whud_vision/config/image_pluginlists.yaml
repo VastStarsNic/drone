@@ -1,0 +1,9 @@
+plugin_blacklist: 
+- Example
+# - ColorRecognize
+# extras
+
+plugin_whitelist:
+#- 'sys_*'
+- ColorRecognize
+- QRCodeRecognize

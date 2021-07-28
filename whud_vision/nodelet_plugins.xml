@@ -1,0 +1,10 @@
+<library path="lib/libwhud_vision_nodelet">
+    <class 
+      name="whud_vision/ImageFrameNodelet" 
+      type="whud_vision::ImageFrame" 
+      base_class_type="nodelet::Nodelet">
+      <description>
+        Nodelet for subscribing a ROS image.
+      </description>
+    </class>
+  </library>
